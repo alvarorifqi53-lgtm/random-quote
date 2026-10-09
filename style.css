@@ -1,0 +1,68 @@
+:root {
+    --bg-1: #f4f77f;
+    --bg-2: #e0e0e0;
+    --primary: #4f4f4f;
+    --primary-dark: #0d3385;
+    --text: #1f1f1f;
+    --muted: #6b7280;
+    --white: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg, var(--bg-1), var(--bg-2));
+    color: var(--text);
+}
+
+.quote-card {
+    width: min(90vw, 520px);
+    background: var(--white);
+    padding: 30px 24px;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(79, 70, 229, 0.12);
+    text-align: center;
+}
+
+#quoteID {
+    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+
+#authorID {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin: 0 0 20px;
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(79, 70, 229, 0.25);
+}
+
+button:active {
+    transform: translateY(0);
+}
